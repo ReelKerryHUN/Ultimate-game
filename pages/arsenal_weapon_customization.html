@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arsenal & Weapon Customization - Battle Arena Web</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Explore and customize your perfect loadout with our comprehensive weapon arsenal. Advanced statistics, real-time modifications, and community builds." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbattleare2634back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full bg-background/90 backdrop-blur-tactical border-b border-surface-600 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-background" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-gradient">Battle Arena Web</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_gaming_platform_hub.html" class="text-text-secondary hover:text-accent transition-tactical">Home</a>
+                    <a href="game_launcher_portal.html" class="text-text-secondary hover:text-accent transition-tactical">Play Now</a>
+                    <a href="arsenal_weapon_customization.html" class="text-accent font-medium">Arsenal</a>
+                    <a href="game_settings_optimization.html" class="text-text-secondary hover:text-accent transition-tactical">Settings</a>
+                    <div class="flex items-center space-x-2 text-success text-sm">
+                        <div class="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+                        <span class="stat-display">12,847 Online</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Arsenal Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-background via-surface/20 to-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="text-gradient">Weapon Arsenal</span>
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                    Master your craft with precision-engineered weapons. Every attachment matters, every modification counts.
+                </p>
+                
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                    <div class="hud-panel text-center">
+                        <div class="stat-display text-2xl mb-2">47</div>
+                        <div class="text-text-secondary text-sm">Total Weapons</div>
+                    </div>
+                    <div class="hud-panel text-center">
+                        <div class="stat-display text-2xl mb-2">156</div>
+                        <div class="text-text-secondary text-sm">Attachments</div>
+                    </div>
+                    <div class="hud-panel text-center">
+                        <div class="stat-display text-2xl mb-2">1,247</div>
+                        <div class="text-text-secondary text-sm">Community Builds</div>
+                    </div>
+                    <div class="hud-panel text-center">
+                        <div class="stat-display text-2xl mb-2">89%</div>
+                        <div class="text-text-secondary text-sm">Unlocked</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weapon Categories & Filters -->
+    <section class="py-8 bg-surface/30 sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+                <button class="btn-primary px-6 py-2 text-sm">All Weapons</button>
+                <button class="btn-secondary px-6 py-2 text-sm">Assault Rifles</button>
+                <button class="btn-secondary px-6 py-2 text-sm">SMGs</button>
+                <button class="btn-secondary px-6 py-2 text-sm">Sniper Rifles</button>
+                <button class="btn-secondary px-6 py-2 text-sm">Shotguns</button>
+                <button class="btn-secondary px-6 py-2 text-sm">Pistols</button>
+            </div>
+
+            <!-- Advanced Filters -->
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                        </svg>
+                        <select class="input-field text-sm">
+                            <option>Sort by Damage</option>
+                            <option>Sort by Range</option>
+                            <option>Sort by Fire Rate</option>
+                            <option>Sort by Popularity</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="unlocked-only" class="accent-accent" />
+                        <label for="unlocked-only" class="text-sm text-text-secondary">Unlocked Only</label>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-2">
+                    <input type="text" placeholder="Search weapons..." class="input-field text-sm w-64" />
+                    <button class="btn-secondary p-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                    <button class="btn-secondary p-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weapon Gallery -->
+    <section class="py-12 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- M4A1 Carbine -->
+                <div class="card p-6 group hover:border-accent transition-tactical cursor-pointer">
+                    <div class="relative mb-6 overflow-hidden rounded-lg bg-surface-800">
+                        <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="M4A1 Carbine 3D Model" class="w-full h-48 object-cover group-hover:scale-105 transition-tactical" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="achievement-badge">Popular</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <div class="w-8 h-8 bg-background/80 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="bg-background/80 px-2 py-1 rounded text-accent">Assault Rifle</span>
+                                <span class="bg-background/80 px-2 py-1 rounded text-text-primary">Level 5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-gradient">M4A1 Carbine</h3>
+                        <p class="text-text-secondary text-sm mb-3">Versatile assault rifle with balanced performance across all ranges.</p>
+                        
+                        <!-- Weapon Stats -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Damage</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">42</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Range</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">85</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Fire Rate</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">650</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-2">
+                        <button class="btn-primary flex-1 text-sm">Customize</button>
+                        <button class="btn-secondary px-3">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- AWP Dragon Lore -->
+                <div class="card p-6 group hover:border-accent transition-tactical cursor-pointer">
+                    <div class="relative mb-6 overflow-hidden rounded-lg bg-surface-800">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AWP Dragon Lore 3D Model" class="w-full h-48 object-cover group-hover:scale-105 transition-tactical" onerror="this.src='https://images.pixabay.com/photo/2017/08/07/14/02/people-2604149_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-warning text-background px-3 py-1 rounded-full text-sm font-semibold">Legendary</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <div class="w-8 h-8 bg-background/80 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="bg-background/80 px-2 py-1 rounded text-accent">Sniper Rifle</span>
+                                <span class="bg-background/80 px-2 py-1 rounded text-text-primary">Level 25</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-gradient">AWP Dragon Lore</h3>
+                        <p class="text-text-secondary text-sm mb-3">One-shot potential with unmatched long-range precision.</p>
+                        
+                        <!-- Weapon Stats -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Damage</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">115</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Range</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">100</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Fire Rate</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">41</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-2">
+                        <button class="btn-primary flex-1 text-sm">Customize</button>
+                        <button class="btn-secondary px-3">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MP5-SD -->
+                <div class="card p-6 group hover:border-accent transition-tactical cursor-pointer">
+                    <div class="relative mb-6 overflow-hidden rounded-lg bg-surface-800">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MP5-SD 3D Model" class="w-full h-48 object-cover group-hover:scale-105 transition-tactical" onerror="this.src='https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-success text-background px-3 py-1 rounded-full text-sm font-semibold">Fast</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <div class="w-8 h-8 bg-background/80 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="bg-background/80 px-2 py-1 rounded text-accent">SMG</span>
+                                <span class="bg-background/80 px-2 py-1 rounded text-text-primary">Level 8</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-gradient">MP5-SD</h3>
+                        <p class="text-text-secondary text-sm mb-3">Silenced SMG perfect for close-quarters stealth operations.</p>
+                        
+                        <!-- Weapon Stats -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Damage</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">26</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Range</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">35</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Fire Rate</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">750</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-2">
+                        <button class="btn-primary flex-1 text-sm">Customize</button>
+                        <button class="btn-secondary px-3">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- AK-47 -->
+                <div class="card p-6 group hover:border-accent transition-tactical cursor-pointer">
+                    <div class="relative mb-6 overflow-hidden rounded-lg bg-surface-800">
+                        <img src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="AK-47 3D Model" class="w-full h-48 object-cover group-hover:scale-105 transition-tactical" onerror="this.src='https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-error text-background px-3 py-1 rounded-full text-sm font-semibold">High Damage</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <div class="w-8 h-8 bg-background/80 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="bg-background/80 px-2 py-1 rounded text-accent">Assault Rifle</span>
+                                <span class="bg-background/80 px-2 py-1 rounded text-text-primary">Level 12</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-gradient">AK-47</h3>
+                        <p class="text-text-secondary text-sm mb-3">Legendary reliability with devastating stopping power.</p>
+                        
+                        <!-- Weapon Stats -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Damage</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">48</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Range</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">78</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Fire Rate</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">600</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-2">
+                        <button class="btn-primary flex-1 text-sm">Customize</button>
+                        <button class="btn-secondary px-3">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Glock-18 -->
+                <div class="card p-6 group hover:border-accent transition-tactical cursor-pointer">
+                    <div class="relative mb-6 overflow-hidden rounded-lg bg-surface-800">
+                        <img src="https://images.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png?q=80&w=2940&auto=format&fit=crop" alt="Glock-18 3D Model" class="w-full h-48 object-cover group-hover:scale-105 transition-tactical" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent text-background px-3 py-1 rounded-full text-sm font-semibold">Starter</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <div class="w-8 h-8 bg-background/80 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="bg-background/80 px-2 py-1 rounded text-accent">Pistol</span>
+                                <span class="bg-background/80 px-2 py-1 rounded text-text-primary">Level 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-gradient">Glock-18</h3>
+                        <p class="text-text-secondary text-sm mb-3">Reliable sidearm with burst-fire capability.</p>
+                        
+                        <!-- Weapon Stats -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Damage</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">28</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Range</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">25</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Fire Rate</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">400</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-2">
+                        <button class="btn-primary flex-1 text-sm">Customize</button>
+                        <button class="btn-secondary px-3">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pump Shotgun -->
+                <div class="card p-6 group hover:border-accent transition-tactical cursor-pointer">
+                    <div class="relative mb-6 overflow-hidden rounded-lg bg-surface-800">
+                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?q=80&w=2940&auto=format&fit=crop" alt="Pump Shotgun 3D Model" class="w-full h-48 object-cover group-hover:scale-105 transition-tactical" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-warning text-background px-3 py-1 rounded-full text-sm font-semibold">Close Range</span>
+                        </div>
+                        <div class="absolute top-4 right-4">
+                            <div class="w-8 h-8 bg-background/80 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="bg-background/80 px-2 py-1 rounded text-accent">Shotgun</span>
+                                <span class="bg-background/80 px-2 py-1 rounded text-text-primary">Level 15</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold mb-2 text-gradient">Nova Pump</h3>
+                        <p class="text-text-secondary text-sm mb-3">Devastating close-range power with wide spread pattern.</p>
+                        
+                        <!-- Weapon Stats -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Damage</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">90</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Range</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">15</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary text-sm">Fire Rate</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                        <div class="w-2 h-2 bg-surface-600 rounded-full"></div>
+                                    </div>
+                                    <span class="stat-display text-sm">68</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-2">
+                        <button class="btn-primary flex-1 text-sm">Customize</button>
+                        <button class="btn-secondary px-3">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center mt-12">
+                <button class="btn-secondary px-8 py-3">
+                    Load More Weapons
+                    <svg class="w-5 h-5 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weapon Customization Preview -->
+    <section class="py-20 bg-surface/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- 3D Weapon Preview -->
+                <div class="relative">
+                    <div class="card p-8 bg-gradient-to-br from-surface to-surface-800">
+                        <div class="text-center mb-6">
+                            <h3 class="text-2xl font-bold text-gradient mb-2">M4A1 Carbine</h3>
+                            <p class="text-text-secondary">Real-time Customization Preview</p>
+                        </div>
+                        
+                        <!-- 3D Model Placeholder -->
+                        <div class="relative bg-background rounded-lg p-8 mb-6 min-h-64 flex items-center justify-center">
+                            <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3" alt="M4A1 3D Preview" class="max-w-full max-h-48 object-contain" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_800.jpg'; this.onerror=null;" />
+                            <div class="absolute top-4 right-4">
+                                <button class="w-10 h-10 bg-surface/80 hover:bg-accent rounded-full flex items-center justify-center transition-tactical">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Performance Impact -->
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Damage</span>
+                                <div class="flex items-center space-x-2">
+                                    <span class="stat-display text-success">+5</span>
+                                    <span class="stat-display">47</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Range</span>
+                                <div class="flex items-center space-x-2">
+                                    <span class="stat-display text-success">+12</span>
+                                    <span class="stat-display">97</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Recoil</span>
+                                <div class="flex items-center space-x-2">
+                                    <span class="stat-display text-error">-8</span>
+                                    <span class="stat-display">34</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Attachment System -->
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-gradient">Attachment System</h3>
+                        <p class="text-text-secondary mb-8">
+                            Fine-tune your weapon's performance with precision attachments. Each modification affects multiple stats, creating endless tactical possibilities.
+                        </p>
+                    </div>
+
+                    <!-- Attachment Categories -->
+                    <div class="space-y-4">
+                        <!-- Optics -->
+                        <div class="card p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Optics</h4>
+                                        <p class="text-text-secondary text-sm">ACOG 4x Scope</p>
+                                    </div>
+                                </div>
+                                <button class="btn-secondary px-3 py-1 text-sm">Change</button>
+                            </div>
+                            <div class="text-xs text-text-secondary">
+                                +15 Range, +8 Accuracy, -3 ADS Speed
+                            </div>
+                        </div>
+
+                        <!-- Barrel -->
+                        <div class="card p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Barrel</h4>
+                                        <p class="text-text-secondary text-sm">Extended Barrel</p>
+                                    </div>
+                                </div>
+                                <button class="btn-secondary px-3 py-1 text-sm">Change</button>
+                            </div>
+                            <div class="text-xs text-text-secondary">
+                                +10 Range, +5 Damage, -2 Mobility
+                            </div>
+                        </div>
+
+                        <!-- Grip -->
+                        <div class="card p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Grip</h4>
+                                        <p class="text-text-secondary text-sm">Vertical Foregrip</p>
+                                    </div>
+                                </div>
+                                <button class="btn-secondary px-3 py-1 text-sm">Change</button>
+                            </div>
+                            <div class="text-xs text-text-secondary">
+                                +12 Recoil Control, +5 Stability
+                            </div>
+                        </div>
+
+                        <!-- Stock -->
+                        <div class="card p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-surface-600 rounded-lg flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-text-secondary">Stock</h4>
+                                        <p class="text-text-secondary text-sm">No Attachment</p>
+                                    </div>
+                                </div>
+                                <button class="btn-primary px-3 py-1 text-sm">Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Save Loadout -->
+                    <div class="flex space-x-3 pt-4">
+                        <button class="btn-primary flex-1">Save Loadout</button>
+                        <button class="btn-secondary px-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Builds -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-gradient">Community Builds</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Discover proven configurations from top players. Vote on builds and share your own tactical innovations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Build 1 -->
+                <div class="card p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Player avatar" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_150.png'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold">ProSniper_Elite</div>
+                                <div class="text-text-secondary text-sm">Legendary</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="stat-display">4.8</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-bold mb-2">Long Range Dominator</h3>
+                    <p class="text-text-secondary text-sm mb-4">AWP build optimized for maximum range and one-shot potential.</p>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Optic:</span>
+                            <span>8x Scope</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Barrel:</span>
+                            <span>Heavy Barrel</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Stock:</span>
+                            <span>Precision Stock</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex space-x-2">
+                            <button class="flex items-center space-x-1 text-success hover:text-success-400 transition-tactical">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+                                </svg>
+                                <span class="text-sm">247</span>
+                            </button>
+                            <button class="flex items-center space-x-1 text-error hover:text-error-400 transition-tactical">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                                <span class="text-sm">12</span>
+                            </button>
+                        </div>
+                        <button class="btn-secondary px-4 py-2 text-sm">Copy Build</button>
+                    </div>
+                </div>
+
+                <!-- Build 2 -->
+                <div class="card p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Player avatar" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold">RushMaster_99</div>
+                                <div class="text-text-secondary text-sm">Master</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="stat-display">4.6</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-bold mb-2">CQC Destroyer</h3>
+                    <p class="text-text-secondary text-sm mb-4">MP5 setup for aggressive close-quarters combat.</p>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Optic:</span>
+                            <span>Red Dot</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Barrel:</span>
+                            <span>Suppressor</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Grip:</span>
+                            <span>Angled Grip</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex space-x-2">
+                            <button class="flex items-center space-x-1 text-success hover:text-success-400 transition-tactical">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+                                </svg>
+                                <span class="text-sm">189</span>
+                            </button>
+                            <button class="flex items-center space-x-1 text-error hover:text-error-400 transition-tactical">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                                <span class="text-sm">8</span>
+                            </button>
+                        </div>
+                        <button class="btn-secondary px-4 py-2 text-sm">Copy Build</button>
+                    </div>
+                </div>
+
+                <!-- Build 3 -->
+                <div class="card p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_150.png?q=80&w=150&h=150&auto=format&fit=crop" alt="Player avatar" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                            <div>
+                                <div class="font-semibold">TacticalGuru</div>
+                                <div class="text-text-secondary text-sm">Expert</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span class="stat-display">4.9</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-bold mb-2">Balanced Warrior</h3>
+                    <p class="text-text-secondary text-sm mb-4">M4A1 configuration for versatile mid-range engagements.</p>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Optic:</span>
+                            <span>ACOG 4x</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Barrel:</span>
+                            <span>Extended Barrel</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Grip:</span>
+                            <span>Vertical Grip</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex space-x-2">
+                            <button class="flex items-center space-x-1 text-success hover:text-success-400 transition-tactical">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/>
+                                </svg>
+                                <span class="text-sm">312</span>
+                            </button>
+                            <button class="flex items-center space-x-1 text-error hover:text-error-400 transition-tactical">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                                <span class="text-sm">5</span>
+                            </button>
+                        </div>
+                        <button class="btn-secondary px-4 py-2 text-sm">Copy Build</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="btn-primary mr-4">Share Your Build</button>
+                <button class="btn-secondary">View All Builds</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ballistics Simulator -->
+    <section class="py-20 bg-surface/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-gradient">Ballistics Simulator</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Test weapon performance against different armor types and engagement distances. Data-driven tactical decisions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Simulator Controls -->
+                <div class="space-y-6">
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4 text-gradient">Test Parameters</h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Weapon</label>
+                                <select class="input-field w-full">
+                                    <option>M4A1 Carbine</option>
+                                    <option>AK-47</option>
+                                    <option>AWP Dragon Lore</option>
+                                    <option>MP5-SD</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Target Distance</label>
+                                <div class="flex items-center space-x-4">
+                                    <input type="range" min="5" max="100" value="50" class="flex-1 accent-accent" />
+                                    <span class="stat-display w-16 text-right">50m</span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Armor Type</label>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <button class="btn-primary text-sm">No Armor</button>
+                                    <button class="btn-secondary text-sm">Light Armor</button>
+                                    <button class="btn-secondary text-sm">Heavy Armor</button>
+                                    <button class="btn-secondary text-sm">Full Armor</button>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Hit Location</label>
+                                <select class="input-field w-full">
+                                    <option>Head</option>
+                                    <option>Chest</option>
+                                    <option>Stomach</option>
+                                    <option>Arms</option>
+                                    <option>Legs</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary w-full mt-6">Run Simulation</button>
+                    </div>
+                </div>
+
+                <!-- Results Display -->
+                <div class="space-y-6">
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4 text-gradient">Simulation Results</h3>
+                        
+                        <!-- Damage Chart -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-text-secondary">Damage Output</span>
+                                <span class="stat-display text-2xl">42</span>
+                            </div>
+                            <div class="w-full bg-surface-600 rounded-full h-3">
+                                <div class="bg-accent h-3 rounded-full" style="width: 84%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Detailed Stats -->
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Base Damage:</span>
+                                <span class="stat-display">50</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Distance Falloff:</span>
+                                <span class="stat-display text-warning">-6</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Armor Reduction:</span>
+                                <span class="stat-display text-error">-2</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Final Damage:</span>
+                                <span class="stat-display text-accent">42</span>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t border-surface-600 pt-4 mt-4">
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Shots to Kill:</span>
+                                <span class="stat-display text-xl">3</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">Time to Kill:</span>
+                                <span class="stat-display text-xl">0.46s</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Comparison Chart -->
+                    <div class="card p-6">
+                        <h4 class="font-bold mb-4">Damage vs Distance</h4>
+                        <div class="h-32 bg-background rounded-lg flex items-end justify-between p-4">
+                            <!-- SVG Chart Placeholder -->
+                            <svg class="w-full h-full" viewBox="0 0 300 100">
+                                <polyline fill="none" stroke="#00d4ff" stroke-width="2" points="0,20 50,25 100,35 150,50 200,70 250,85 300,95"/>
+                                <circle cx="100" cy="35" r="3" fill="#00d4ff"/>
+                            </svg>
+                        </div>
+                        <div class="flex justify-between text-xs text-text-secondary mt-2">
+                            <span>0m</span>
+                            <span>25m</span>
+                            <span>50m</span>
+                            <span>75m</span>
+                            <span>100m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meta Analysis -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-gradient">Meta Analysis</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Stay ahead of the competition with real-time weapon usage statistics and balance tracking.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Usage Statistics -->
+                <div class="lg:col-span-2">
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-6">Weapon Usage This Week</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-accent/20 rounded-lg flex items-center justify-center">
+                                        <span class="text-accent font-bold text-sm">1</span>
+                                    </div>
+                                    <span class="font-medium">M4A1 Carbine</span>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-32 bg-surface-600 rounded-full h-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 78%"></div>
+                                    </div>
+                                    <span class="stat-display w-12 text-right">78%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-surface-600 rounded-lg flex items-center justify-center">
+                                        <span class="text-text-primary font-bold text-sm">2</span>
+                                    </div>
+                                    <span class="font-medium">AK-47</span>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-32 bg-surface-600 rounded-full h-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 65%"></div>
+                                    </div>
+                                    <span class="stat-display w-12 text-right">65%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-surface-600 rounded-lg flex items-center justify-center">
+                                        <span class="text-text-primary font-bold text-sm">3</span>
+                                    </div>
+                                    <span class="font-medium">AWP Dragon Lore</span>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-32 bg-surface-600 rounded-full h-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 42%"></div>
+                                    </div>
+                                    <span class="stat-display w-12 text-right">42%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-surface-600 rounded-lg flex items-center justify-center">
+                                        <span class="text-text-primary font-bold text-sm">4</span>
+                                    </div>
+                                    <span class="font-medium">MP5-SD</span>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-32 bg-surface-600 rounded-full h-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 38%"></div>
+                                    </div>
+                                    <span class="stat-display w-12 text-right">38%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-8 h-8 bg-surface-600 rounded-lg flex items-center justify-center">
+                                        <span class="text-text-primary font-bold text-sm">5</span>
+                                    </div>
+                                    <span class="font-medium">Nova Pump</span>
+                                </div>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-32 bg-surface-600 rounded-full h-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 23%"></div>
+                                    </div>
+                                    <span class="stat-display w-12 text-right">23%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Balance Changes -->
+                <div class="space-y-6">
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4">Recent Balance Changes</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-success pl-4">
+                                <div class="font-medium">AK-47</div>
+                                <div class="text-text-secondary text-sm">+2 Damage</div>
+                                <div class="text-text-tertiary text-xs">Dec 15, 2025</div>
+                            </div>
+                            
+                            <div class="border-l-4 border-error pl-4">
+                                <div class="font-medium">AWP Dragon Lore</div>
+                                <div class="text-text-secondary text-sm">-5% Fire Rate</div>
+                                <div class="text-text-tertiary text-xs">Dec 12, 2025</div>
+                            </div>
+                            
+                            <div class="border-l-4 border-warning pl-4">
+                                <div class="font-medium">MP5-SD</div>
+                                <div class="text-text-secondary text-sm">Recoil Adjusted</div>
+                                <div class="text-text-tertiary text-xs">Dec 10, 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4">Win Rate by Weapon</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">M4A1</span>
+                                <span class="stat-display text-success">67%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">AK-47</span>
+                                <span class="stat-display text-success">64%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">AWP</span>
+                                <span class="stat-display text-warning">58%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-text-secondary">MP5-SD</span>
+                                <span class="stat-display text-success">61%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-background" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold text-gradient">Battle Arena Web</span>
+                    </div>
+                    <p class="text-text-secondary max-w-md mb-6">
+                        Master your arsenal with precision-engineered weapons and tactical depth. Every attachment matters, every modification counts.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="w-10 h-10 bg-surface-600 hover:bg-accent rounded-lg flex items-center justify-center transition-tactical">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </button>
+                        <button class="w-10 h-10 bg-surface-600 hover:bg-accent rounded-lg flex items-center justify-center transition-tactical">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </button>
+                        <button class="w-10 h-10 bg-surface-600 hover:bg-accent rounded-lg flex items-center justify-center transition-tactical">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-4">Arsenal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="arsenal_weapon_customization.html" class="text-text-secondary hover:text-accent transition-tactical">All Weapons</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-tactical">Customization</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-tactical">Community Builds</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-tactical">Ballistics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-bold mb-4">Game</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage_gaming_platform_hub.html" class="text-text-secondary hover:text-accent transition-tactical">Home</a></li>
+                        <li><a href="game_launcher_portal.html" class="text-text-secondary hover:text-accent transition-tactical">Play Now</a></li>
+                        <li><a href="game_settings_optimization.html" class="text-text-secondary hover:text-accent transition-tactical">Settings</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-tactical">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-surface-600 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">© 2025 Battle Arena Web. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-tactical">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-tactical">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-tactical">Fair Play</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
