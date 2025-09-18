@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle Arena Web - Console-Quality FPS Gaming in Your Browser</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Experience console-quality FPS gaming directly in your browser. No downloads required. Compete with players worldwide in real-time multiplayer battles." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbattleare2634back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 w-full bg-background/90 backdrop-blur-tactical border-b border-surface-600 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-background" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-gradient">Battle Arena Web</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_gaming_platform_hub.html" class="text-accent font-medium">Home</a>
+                    <a href="game_launcher_portal.html" class="text-text-secondary hover:text-accent transition-tactical">Play Now</a>
+                    <a href="arsenal_weapon_customization.html" class="text-text-secondary hover:text-accent transition-tactical">Arsenal</a>
+                    <a href="game_settings_optimization.html" class="text-text-secondary hover:text-accent transition-tactical">Settings</a>
+                    <div class="flex items-center space-x-2 text-success text-sm">
+                        <div class="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+                        <span class="stat-display">12,847 Online</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Live Gameplay Preview -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Video/Gameplay Preview -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Live gameplay preview" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=1'; this.onerror=null;" />
+            <div class="absolute inset-0 bg-background/70"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+                    <span class="text-gradient">Skill Over Hardware</span><br />
+                    <span class="text-text-primary">Console-Quality FPS</span><br />
+                    <span class="text-text-secondary">In Your Browser</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-text-secondary max-w-3xl mx-auto mb-8">
+                    Experience competitive gaming without barriers. Jump into real-time multiplayer battles with advanced weapon customization—no downloads, no limits.
+                </p>
+            </div>
+
+            <!-- Primary CTAs -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="game_launcher_portal.html" class="btn-primary text-lg px-8 py-4 w-full sm:w-auto">
+                    🎮 Play Now - No Download Required
+                </a>
+                <button class="btn-secondary text-lg px-8 py-4 w-full sm:w-auto">
+                    👁️ Watch Live Matches
+                </button>
+            </div>
+
+            <!-- Real-time Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="hud-panel text-center">
+                    <div class="stat-display text-2xl mb-2">12,847</div>
+                    <div class="text-text-secondary text-sm">Players Online</div>
+                </div>
+                <div class="hud-panel text-center">
+                    <div class="stat-display text-2xl mb-2">1,234</div>
+                    <div class="text-text-secondary text-sm">Active Matches</div>
+                </div>
+                <div class="hud-panel text-center">
+                    <div class="stat-display text-2xl mb-2">47</div>
+                    <div class="text-text-secondary text-sm">Weapon Types</div>
+                </div>
+                <div class="hud-panel text-center">
+                    <div class="stat-display text-2xl mb-2">$25K</div>
+                    <div class="text-text-secondary text-sm">Tournament Prize</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Dynamic Weapon Showcase -->
+    <section class="py-20 bg-surface/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-gradient">Arsenal Mastery</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Every weapon tells a story. Discover your perfect loadout with advanced customization systems and tactical depth.
+                </p>
+            </div>
+
+            <!-- Weapon Carousel -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Assault Rifle Card -->
+                <div class="card p-6 group hover:border-accent transition-tactical">
+                    <div class="relative mb-6 overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="M4A1 Assault Rifle" class="w-full h-48 object-cover group-hover:scale-105 transition-tactical" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="achievement-badge">Popular</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gradient">M4A1 Carbine</h3>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Damage</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Range</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Fire Rate</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-secondary w-full">Customize Loadout</button>
+                </div>
+
+                <!-- Sniper Rifle Card -->
+                <div class="card p-6 group hover:border-accent transition-tactical">
+                    <div class="relative mb-6 overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AWP Sniper Rifle" class="w-full h-48 object-cover group-hover:scale-105 transition-tactical" onerror="this.src='https://images.pixabay.com/photo/2017/08/07/14/02/people-2604149_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-warning text-background px-3 py-1 rounded-full text-sm font-semibold">Pro</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gradient">AWP Dragon Lore</h3>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Damage</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Range</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Fire Rate</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-secondary w-full">Customize Loadout</button>
+                </div>
+
+                <!-- SMG Card -->
+                <div class="card p-6 group hover:border-accent transition-tactical">
+                    <div class="relative mb-6 overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="MP5 Submachine Gun" class="w-full h-48 object-cover group-hover:scale-105 transition-tactical" onerror="this.src='https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4">
+                            <span class="bg-success text-background px-3 py-1 rounded-full text-sm font-semibold">Fast</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gradient">MP5-SD</h3>
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Damage</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Range</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                                <div class="w-3 h-2 bg-surface-600 rounded"></div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Fire Rate</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                                <div class="w-3 h-2 bg-accent rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-secondary w-full">Customize Loadout</button>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="arsenal_weapon_customization.html" class="btn-primary">
+                    Explore Full Arsenal →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Spotlight -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-gradient">Tournament Arena</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Compete for glory and prizes in our weekly tournaments. Your arena awaits.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Featured Tournament -->
+                <div class="card p-8 border-accent">
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gradient mb-2">Winter Championship</h3>
+                            <p class="text-text-secondary">December 20-22, 2025</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="stat-display text-3xl">$25,000</div>
+                            <div class="text-text-secondary text-sm">Prize Pool</div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="stat-display text-xl">1,247</div>
+                            <div class="text-text-secondary text-sm">Registered</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="stat-display text-xl">64</div>
+                            <div class="text-text-secondary text-sm">Teams</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="stat-display text-xl">3</div>
+                            <div class="text-text-secondary text-sm">Days Left</div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary w-full mb-4">Register Now</button>
+                    <button class="btn-secondary w-full">View Bracket</button>
+                </div>
+
+                <!-- Live Leaderboard -->
+                <div class="card p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-gradient">Global Leaderboard</h3>
+                    
+                    <div class="space-y-4">
+                        <!-- Rank 1 -->
+                        <div class="flex items-center justify-between p-4 bg-surface-800 rounded-lg border border-warning">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-8 h-8 bg-warning rounded-full flex items-center justify-center text-background font-bold">1</div>
+                                <div>
+                                    <div class="font-bold">ProGamer_2025</div>
+                                    <div class="text-text-secondary text-sm">Legendary</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="stat-display">2,847</div>
+                                <div class="text-text-secondary text-sm">ELO</div>
+                            </div>
+                        </div>
+
+                        <!-- Rank 2 -->
+                        <div class="flex items-center justify-between p-4 bg-surface-800 rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-8 h-8 bg-surface-600 rounded-full flex items-center justify-center text-text-primary font-bold">2</div>
+                                <div>
+                                    <div class="font-bold">SniperElite</div>
+                                    <div class="text-text-secondary text-sm">Master</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="stat-display">2,734</div>
+                                <div class="text-text-secondary text-sm">ELO</div>
+                            </div>
+                        </div>
+
+                        <!-- Rank 3 -->
+                        <div class="flex items-center justify-between p-4 bg-surface-800 rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-8 h-8 bg-surface-600 rounded-full flex items-center justify-center text-text-primary font-bold">3</div>
+                                <div>
+                                    <div class="font-bold">TacticalAce</div>
+                                    <div class="text-text-secondary text-sm">Master</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="stat-display">2,689</div>
+                                <div class="text-text-secondary text-sm">ELO</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-secondary w-full mt-6">View Full Rankings</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Over Hardware Section -->
+    <section class="py-20 bg-surface/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-gradient">Democratizing Competitive Gaming</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    From mobile to desktop, every player competes on equal footing. Your skill is your only advantage.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Device Compatibility -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4 6h16v2H4zm0 5h16v6H4zm0 9h16v2H4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Any Device</h3>
+                    <p class="text-text-secondary">Play on desktop, tablet, or mobile with adaptive controls and graphics scaling.</p>
+                </div>
+
+                <!-- No Downloads -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Instant Access</h3>
+                    <p class="text-text-secondary">Jump into matches immediately. No downloads, installations, or waiting.</p>
+                </div>
+
+                <!-- Fair Competition -->
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Skill-Based</h3>
+                    <p class="text-text-secondary">Advanced matchmaking ensures fair competition based on skill, not hardware.</p>
+                </div>
+            </div>
+
+            <!-- Player Testimonials -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Player testimonial" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_150.png'; this.onerror=null;" />
+                        <div>
+                            <div class="font-bold">Alex Chen</div>
+                            <div class="text-text-secondary text-sm">Mobile Player</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">"I compete against PC players on my phone and hold my own. The touch controls are incredibly responsive, and the graphics quality is amazing for a browser game."</p>
+                </div>
+
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=150&h=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Player testimonial" class="w-12 h-12 rounded-full object-cover mr-4" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=1'; this.onerror=null;" />
+                        <div>
+                            <div class="font-bold">Sarah Martinez</div>
+                            <div class="text-text-secondary text-sm">Desktop Player</div>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">"Finally, a competitive FPS that doesn't require a gaming rig. I can play during lunch breaks at work and still climb the rankings. The weapon customization is incredibly deep."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Updates Feed -->
+    <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    <span class="text-gradient">Latest Updates</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Stay informed with patch notes, balance updates, and community highlights.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Patch Notes -->
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-3 h-3 bg-accent rounded-full mr-3"></div>
+                        <span class="text-accent text-sm font-medium">PATCH NOTES</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Version 2.4.1 Released</h3>
+                    <p class="text-text-secondary mb-4">Weapon balance adjustments, new map rotation, and performance optimizations for mobile devices.</p>
+                    <div class="text-text-tertiary text-sm">December 18, 2025</div>
+                </div>
+
+                <!-- Community Highlight -->
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-3 h-3 bg-success rounded-full mr-3"></div>
+                        <span class="text-success text-sm font-medium">COMMUNITY</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Player Spotlight: TacticalMaster</h3>
+                    <p class="text-text-secondary mb-4">From bronze to legendary in 3 months using only SMGs. Read about their incredible journey and unique strategies.</p>
+                    <div class="text-text-tertiary text-sm">December 17, 2025</div>
+                </div>
+
+                <!-- Tournament Results -->
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-3 h-3 bg-warning rounded-full mr-3"></div>
+                        <span class="text-warning text-sm font-medium">ESPORTS</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Autumn Cup Champions</h3>
+                    <p class="text-text-secondary mb-4">Team Phoenix takes the crown in an incredible 5-map series. Watch the highlights and see the winning strategies.</p>
+                    <div class="text-text-tertiary text-sm">December 15, 2025</div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="btn-secondary">View All Updates</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-background" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold text-gradient">Battle Arena Web</span>
+                    </div>
+                    <p class="text-text-secondary max-w-md mb-6">
+                        Democratizing competitive gaming through browser-based FPS excellence. Where skill matters more than hardware.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="w-10 h-10 bg-surface-600 hover:bg-accent rounded-lg flex items-center justify-center transition-tactical">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </button>
+                        <button class="w-10 h-10 bg-surface-600 hover:bg-accent rounded-lg flex items-center justify-center transition-tactical">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </button>
+                        <button class="w-10 h-10 bg-surface-600 hover:bg-accent rounded-lg flex items-center justify-center transition-tactical">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold mb-4">Game</h4>
+                    <ul class="space-y-2">
+                        <li><a href="game_launcher_portal.html" class="text-text-secondary hover:text-accent transition-tactical">Play Now</a></li>
+                        <li><a href="arsenal_weapon_customization.html" class="text-text-secondary hover:text-accent transition-tactical">Weapons</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-tactical">Tournaments</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-tactical">Leaderboards</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="game_settings_optimization.html" class="text-text-secondary hover:text-accent transition-tactical">Settings</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-tactical">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-tactical">Report Bug</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-tactical">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-surface-600 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">© 2025 Battle Arena Web. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-tactical">Privacy Policy</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-tactical">Terms of Service</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent text-sm transition-tactical">Fair Play</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
