@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle Arena Web</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .loading-container {
+            text-align: center;
+            color: #fff;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff6b35;
+            text-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+        
+        .loading-text {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+        
+        .loading-bar {
+            width: 300px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        .loading-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b35, #f7931e);
+            width: 0%;
+            animation: loading 3s ease-in-out forwards;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        @keyframes loading {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        
+        .redirect-message {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+            opacity: 0;
+            animation: fadeIn 1s ease-in 2s forwards;
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbattleare2634back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="logo">BATTLE ARENA</div>
+        <div class="loading-text">Initializing Gaming Platform...</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+        <div class="redirect-message">Redirecting to Gaming Hub...</div>
+    </div>
+
+    <script>
+        // Redirect to the homepage gaming platform hub after 3 seconds
+        setTimeout(function() {
+            window.location.href = 'pages/homepage_gaming_platform_hub.html';
+        }, 3000);
+        
+        // Add some interactive loading effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingText = document.querySelector('.loading-text');
+            const messages = [
+                'Initializing Gaming Platform...',
+                'Loading Battle Systems...',
+                'Preparing Arsenal...',
+                'Connecting to Game Hub...'
+            ];
+            
+            let messageIndex = 0;
+            const messageInterval = setInterval(function() {
+                messageIndex = (messageIndex + 1) % messages.length;
+                loadingText.textContent = messages[messageIndex];
+            }, 750);
+            
+            // Clear interval before redirect
+            setTimeout(function() {
+                clearInterval(messageInterval);
+            }, 2800);
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>
